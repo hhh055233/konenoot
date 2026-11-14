@@ -48,6 +48,7 @@ jobs:
           java -version
           npx expo --version
           npx expo-doctor
+          npm run typecheck
 
       - name: Generate Android native project
         run: npx expo prebuild --platform android --clean
